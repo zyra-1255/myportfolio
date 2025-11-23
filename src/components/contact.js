@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Contact = () => {
+const contact = () => {
   return (
     <section className="section" id="contact">
       <h2 className="section-title">Get In Touch</h2>
       <div className="contact-section">
         <div className="contact-content">
           <div className="contact-info">
-            <h3 style={{color: '#6366f1', marginBottom: '2rem', fontSize: '1.5rem'}}>Contact Information</h3>
+            <h3>Contact Information</h3>
             
             <div className="contact-item">
               <i className="fas fa-envelope contact-icon"></i>
@@ -24,7 +24,7 @@ const Contact = () => {
               <span>Cabuyao, Laguna, Philippines</span>
             </div>
             
-            <div className="social-links" style={{marginTop: '2rem'}}>
+            <div className="social-links">
               <a href="https://github.com/yourusername" className="social-link" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-github"></i>
               </a>
@@ -66,4 +66,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default contact;

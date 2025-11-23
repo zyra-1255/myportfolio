@@ -1,8 +1,8 @@
 import React from 'react';
 
-const About = () => {
+const about = () => {
   return (
-    <section className="section">
+    <section className="section" id="about">
       <h2 className="section-title">About</h2>
       <p className="about-text">
         Hi, I am Zyra currently A 21-year old 3rd-Year Bachelor of science in computer science student based in Cabuyao, Laguna Philippines.
@@ -17,4 +17,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default about;

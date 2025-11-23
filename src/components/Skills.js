@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Skills = () => {
+const skills = () => {
   const skills = {
     frontend: ["HTML5", "CSS3", "JavaScript", "React", "Bootstrap", "Tailwind CSS"],
     backend: ["PHP", "Laravel", "MySQL", "Node.js", "REST APIs"],
@@ -34,4 +34,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default skills;

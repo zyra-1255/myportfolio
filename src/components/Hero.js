@@ -10,18 +10,10 @@ const Hero = () => {
       <p className="hero-title">Software Engineer</p>
       
       <div className="contact-buttons">
-        <a 
-          href="https://calendly.com/your-username" 
-          className="btn btn-primary"
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
+        <a href="#" className="btn btn-primary">
           <i className="fas fa-calendar-alt"></i> Schedule a Call
         </a>
-        <a 
-          href="mailto:zyra.venancio@email.com" 
-          className="btn btn-secondary"
-        >
+        <a href="mailto:zyra.venancio@email.com" className="btn btn-secondary">
           <i className="fas fa-envelope"></i> Send Email
         </a>
       </div>

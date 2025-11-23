@@ -21,20 +21,8 @@ const Education = () => {
           <span className="course-tag">Mobile Development</span>
         </div>
       </div>
-
-      <div className="education-item">
-        <div className="education-header">
-          <h3 className="education-title">Frontend Development Certification</h3>
-          <span className="education-year">2021</span>
-        </div>
-        <p className="education-institution">Online Courses & Self-Study</p>
-        <p className="education-details">
-          Learned HTML, CSS, JavaScript fundamentals and started building websites since Grade 11.
-        </p>
-      </div>
     </section>
   );
 };
 
 export default Education;
-//education.js

@@ -25,14 +25,6 @@ const Projects = () => {
       demoLink: "#",
       codeLink: "#",
       icon: "fas fa-shopping-cart"
-    },
-    {
-      title: "Portfolio Website",
-      description: "Responsive portfolio website with modern UI/UX design, animations, and contact form.",
-      tech: ["React", "CSS3", "JavaScript", "Responsive Design"],
-      demoLink: "#",
-      codeLink: "#",
-      icon: "fas fa-laptop-code"
     }
   ];
 
