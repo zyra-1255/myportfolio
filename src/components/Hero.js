@@ -1,23 +1,32 @@
 import React from 'react';
-import profile from '../assets/profile.jpg';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
-function Hero() {
+const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero-text">
-        <h1>Hello, I’m Zyra!</h1>
-        <p>Web Developer | Designer | Creative Thinker</p>
-        <div className="contact-icons">
-          <a href="https://github.com/yourusername"><FaGithub /></a>
-          <a href="https://linkedin.com/in/yourusername"><FaLinkedin /></a>
-          <a href="https://twitter.com/yourusername"><FaTwitter /></a>
-        </div>
+    <div className="hero-section">
+      <h1 className="hero-name">Charles Platon</h1>
+      <p className="hero-location">Cabuyao Laguna, Philippines</p>
+      <p className="hero-title">Software Engineer</p>
+      
+      <div className="contact-buttons">
+        <a 
+          href="https://calendly.com/your-username" 
+          className="btn btn-primary"
+          target="_blank" 
+          rel="noopener noreferrer"
+        >
+          Schedule a Call
+        </a>
+        <a 
+          href="mailto:charles.platon@email.com" 
+          className="btn btn-secondary"
+        >
+          Send Email
+        </a>
       </div>
-      <img src={profile} alt="Profile" />
-      <div className="wave"></div>
-    </section>
+      
+      <p className="hero-tagline">I solve problems I don't even want and still doing it.</p>
+    </div>
   );
-}
+};
 
 export default Hero;

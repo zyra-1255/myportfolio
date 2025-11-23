@@ -1,19 +1,17 @@
 import React from 'react';
 
-function Experience() {
+const Experience = () => {
   return (
-    <section id="experience">
-      <h2>Experience</h2>
-      <div>
-        <h3>Frontend Developer - XYZ Company</h3>
-        <p>Jan 2024 - Present: Built responsive web apps using React and CSS.</p>
-      </div>
-      <div>
-        <h3>Intern - ABC Tech</h3>
-        <p>Jun 2023 - Dec 2023: Assisted in UI design and implementation.</p>
+    <section className="section">
+      <h2 className="section-title">Experience</h2>
+      
+      <div className="experience-item">
+        <h3 className="experience-title">Fully functional E-commerce</h3>
+        <p className="experience-description">Currently Building a Full Functional E-commerce using React & Laravel</p>
+        <span className="experience-year">2025</span>
       </div>
     </section>
   );
-}
+};
 
 export default Experience;

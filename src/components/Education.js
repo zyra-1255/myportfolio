@@ -1,19 +1,18 @@
 import React from 'react';
 
-function Education() {
+const Education = () => {
   return (
-    <section id="education">
-      <h2>Education</h2>
-      <div>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <p>PNC University | 2021 - Present</p>
-      </div>
-      <div>
-        <h3>High School Diploma</h3>
-        <p>CSS High School | 2017 - 2021</p>
+    <section className="section">
+      <h2 className="section-title">Education</h2>
+      
+      <div className="education-item">
+        <h3 className="education-title">3rd-Year BS computer science</h3>
+        <p className="education-details">At Pamanitasan ng Cabuyao</p>
+        <p className="education-details">Currently learning Application Development & System Designs</p>
+        <span className="education-year">2025</span>
       </div>
     </section>
   );
-}
+};
 
 export default Education;
