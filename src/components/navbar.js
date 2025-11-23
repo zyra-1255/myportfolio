@@ -14,4 +14,6 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar; 
+//navbar.js
+
