@@ -4,7 +4,9 @@ const Hero = () => {
   return (
     <div className="hero-section">
       <h1 className="hero-name">Zyra Venancio</h1>
-      <p className="hero-location">Cabuyao Laguna, Philippines</p>
+      <p className="hero-location">
+        <i className="fas fa-map-marker-alt"></i> Cabuyao Laguna, Philippines
+      </p>
       <p className="hero-title">Software Engineer</p>
       
       <div className="contact-buttons">
@@ -14,17 +16,19 @@ const Hero = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          Schedule a Call
+          <i className="fas fa-calendar-alt"></i> Schedule a Call
         </a>
         <a 
           href="mailto:zyra.venancio@email.com" 
           className="btn btn-secondary"
         >
-          Send Email
+          <i className="fas fa-envelope"></i> Send Email
         </a>
       </div>
       
-      <p className="hero-tagline">I solve problems I don't even want and still doing it.</p>
+      <p className="hero-tagline">
+        <i className="fas fa-code"></i> I solve problems I don't even want and still doing it.
+      </p>
     </div>
   );
 };

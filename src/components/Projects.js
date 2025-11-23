@@ -3,34 +3,48 @@ import React from 'react';
 const Projects = () => {
   const projects = [
     {
-      title: "The Lost Hospital",
-      description: "A 3D survival horror game built with Unreal Engine featuring immersive environments and puzzle-solving mechanics.",
-      tech: ["Unreal Engine", "C++", "3D Modeling"],
+      title: "Task Management App",
+      description: "A responsive web application for managing daily tasks with drag-and-drop functionality and local storage.",
+      tech: ["React", "CSS3", "JavaScript", "Local Storage"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "#",
+      icon: "fas fa-tasks"
     },
     {
-      title: "E-commerce Platform",
-      description: "Full-stack e-commerce solution with React frontend and Laravel backend, featuring payment integration and admin dashboard.",
-      tech: ["React", "Laravel", "MySQL", "Stripe"],
+      title: "Weather Dashboard",
+      description: "Real-time weather application with location detection and 5-day forecast using weather API.",
+      tech: ["JavaScript", "API Integration", "Bootstrap", "HTML5"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "#",
+      icon: "fas fa-cloud-sun"
+    },
+    {
+      title: "E-commerce Product Page",
+      description: "Modern e-commerce product page with image gallery, cart functionality, and responsive design.",
+      tech: ["React", "CSS3", "JavaScript", "Context API"],
+      demoLink: "#",
+      codeLink: "#",
+      icon: "fas fa-shopping-cart"
     },
     {
       title: "Portfolio Website",
-      description: "Responsive portfolio website showcasing projects and skills with modern UI/UX design principles.",
-      tech: ["React", "CSS3", "JavaScript"],
+      description: "Responsive portfolio website with modern UI/UX design, animations, and contact form.",
+      tech: ["React", "CSS3", "JavaScript", "Responsive Design"],
       demoLink: "#",
-      codeLink: "#"
+      codeLink: "#",
+      icon: "fas fa-laptop-code"
     }
   ];
 
   return (
-    <section className="section">
+    <section className="section" id="projects">
       <h2 className="section-title">Recent Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
+            <div className="project-icon">
+              <i className={project.icon}></i>
+            </div>
             <h3 className="project-title">{project.title}</h3>
             <p className="project-description">{project.description}</p>
             <div className="project-tech">
@@ -39,8 +53,12 @@ const Projects = () => {
               ))}
             </div>
             <div className="project-links">
-              <a href={project.demoLink} className="project-link">Live Demo</a>
-              <a href={project.codeLink} className="project-link">Source Code</a>
+              <a href={project.demoLink} className="project-link">
+                <i className="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href={project.codeLink} className="project-link">
+                <i className="fab fa-github"></i> Source Code
+              </a>
             </div>
           </div>
         ))}
