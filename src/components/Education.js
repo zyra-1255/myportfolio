@@ -37,3 +37,4 @@ const Education = () => {
 };
 
 export default Education;
+//education.js
