@@ -1,27 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
-  color: #333;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
 }
 
 nav {
-  background-color: rgba(24, 40, 72, 0.9);
-  color: white;
-  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 50px;
+  background: rgba(0,0,0,0.3);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 nav a {
-  color: white;
+  color: #fff;
   margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
@@ -32,84 +31,76 @@ nav a:hover {
   color: #ffdd59;
 }
 
-/* About Section */
-#about {
+section {
+  padding: 80px 50px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #eee;
+  max-width: 600px;
+}
+
+.hero {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  justify-content: space-between;
+  padding: 100px 50px;
+  background: linear-gradient(to right, #667eea, #764ba2);
   position: relative;
-}
-
-#about img {
-  width: 250px;
-  border-radius: 50%;
-  border: 5px solid white;
-  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-  transition: transform 0.5s;
-}
-
-#about img:hover {
-  transform: rotate(-5deg) scale(1.05);
-}
-
-#about .about-text {
-  max-width: 600px;
-  text-align: left;
-  animation: fadeInLeft 1.2s ease forwards;
-}
-
-#about h2 {
-  font-size: 2.5rem;
-  color: #182848;
-}
-
-#about p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Wave separator */
-.wave {
-  position: relative;
-  width: 100%;
-  height: 100px;
   overflow: hidden;
 }
 
-.wave svg {
+.hero img {
+  width: 250px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 100px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 1440 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23fff' fill-opacity='0.2' d='M0,96L48,128C96,160,192,224,288,229.3C384,235,480,181,576,138.7C672,96,768,64,864,74.7C960,85,1056,139,1152,138.7C1248,139,1344,85,1392,58.7L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E") no-repeat bottom;
+  background-size: cover;
+  animation: waveMove 6s linear infinite;
 }
 
-@keyframes fadeInLeft {
-  0% {opacity:0; transform: translateX(-50px);}
-  100% {opacity:1; transform: translateX(0);}
+@keyframes waveMove {
+  0% { background-position-x: 0; }
+  100% { background-position-x: 1000px; }
 }
 
-/* Projects Section */
+/* Projects */
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  padding: 60px 20px;
 }
 
 .project-card {
   flex: 1 1 300px;
-  background-color: white;
+  background-color: rgba(255,255,255,0.1);
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
 /* Skills */
@@ -118,37 +109,32 @@ nav a:hover {
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 60px 20px;
 }
 
 .skills-list span {
-  background-color: #182848;
-  color: white;
-  padding: 12px 25px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 10px 20px;
   border-radius: 25px;
   font-weight: 500;
-  transition: transform 0.3s;
-}
-
-.skills-list span:hover {
-  transform: scale(1.1);
 }
 
 /* Contact */
-.contact-icons {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 60px 20px;
-}
-
 .contact-icons a {
-  font-size: 2.5rem;
-  color: #182848;
-  transition: color 0.3s, transform 0.3s;
+  margin: 0 15px;
+  font-size: 2rem;
+  color: #fff;
+  transition: color 0.3s;
 }
 
 .contact-icons a:hover {
   color: #ffdd59;
-  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
 }

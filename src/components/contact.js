@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
-function contact() {
+function Contact() {
   return (
     <section id="contact">
       <h2>Contact Me</h2>
@@ -13,4 +13,4 @@ function contact() {
   );
 }
 
-export default contact;
+export default Contact;

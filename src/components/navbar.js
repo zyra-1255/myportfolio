@@ -1,6 +1,6 @@
 import React from 'react';
 
-function navbar() {
+function Navbar() {
   return (
     <nav>
       <div style={{fontWeight:'700', fontSize:'1.5rem'}}>My Portfolio</div>
@@ -14,4 +14,4 @@ function navbar() {
   );
 }
 
-export default navbar;
+export default Navbar;
