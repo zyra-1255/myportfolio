@@ -9,6 +9,7 @@ function skills() {
         <span>CSS</span>
         <span>JavaScript</span>
         <span>React</span>
+        <span>Git</span>
       </div>
     </section>
   );

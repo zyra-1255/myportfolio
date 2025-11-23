@@ -7,11 +7,15 @@ function project() {
       <div className="projects-container">
         <div className="project-card">
           <h3>Project 1</h3>
-          <p>Simple React app for demonstration purposes.</p>
+          <p>A React app with interactive UI elements.</p>
         </div>
         <div className="project-card">
           <h3>Project 2</h3>
-          <p>Another project showcasing my skills in frontend development.</p>
+          <p>Portfolio website showcasing my skills.</p>
+        </div>
+        <div className="project-card">
+          <h3>Project 3</h3>
+          <p>Simple game app built with JavaScript and React.</p>
         </div>
       </div>
     </section>

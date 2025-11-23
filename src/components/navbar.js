@@ -3,7 +3,7 @@ import React from 'react';
 function navbar() {
   return (
     <nav>
-      <div>My Portfolio</div>
+      <div style={{fontWeight:'700', fontSize:'1.5rem'}}>My Portfolio</div>
       <div>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>

@@ -1,58 +1,97 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background-color: #f0f2f5;
+  color: #333;
 }
 
 nav {
-  background-color: #222;
+  background-color: #4b6cb7; /* gradient color */
+  background-image: linear-gradient(to right, #182848, #4b6cb7);
   color: white;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav a {
   color: white;
   margin-left: 20px;
   text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffdd59;
 }
 
 section {
-  padding: 50px 20px;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 h2 {
-  color: #222;
+  color: #182848;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
 p {
   color: #555;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  justify-content: center;
 }
 
 .project-card {
   flex: 1 1 300px;
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 }
 
 .skills-list {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-list span {
+  background-color: #182848;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 500;
 }
 
 .contact-icons a {
-  margin-right: 15px;
-  font-size: 1.5rem;
-  color: #222;
+  margin: 0 15px;
+  font-size: 2rem;
+  color: #182848;
+  transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+  color: #ffdd59;
 }
