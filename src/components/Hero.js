@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
   return (
     <div className="hero-section">
-      <h1 className="hero-name">Charles Platon</h1>
+      <h1 className="hero-name">Zyra Venancio</h1>
       <p className="hero-location">Cabuyao Laguna, Philippines</p>
       <p className="hero-title">Software Engineer</p>
       
@@ -17,7 +17,7 @@ const Hero = () => {
           Schedule a Call
         </a>
         <a 
-          href="mailto:charles.platon@email.com" 
+          href="mailto:zyra.venancio@email.com" 
           className="btn btn-secondary"
         >
           Send Email
