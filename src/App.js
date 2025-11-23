@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Hero from './components/Hero';
 import About from './components/about.js';
-import Skills from './components/Skills';
+import Skills from './components/skills.js';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Education from './components/Education';
