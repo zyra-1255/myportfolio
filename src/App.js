@@ -1,14 +1,12 @@
+// App.js - add back Hero first
 import React from 'react';
 import './App.css';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <div className="App">
-      <div style={{textAlign: 'center', padding: '4rem'}}>
-        <h1>Zyra Venancio</h1>
-        <p>Portfolio - Under Construction</p>
-        <p>Coming soon...</p>
-      </div>
+      <Hero />
     </div>
   );
 }
