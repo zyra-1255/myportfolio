@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-//import Navbar from './components/Navbar';//
+
+// Comment muna ang Navbar import
+// import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
@@ -13,7 +15,8 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="App">
-    //Navbar//
+      {/* Remove or comment this line: */}
+      {/* <Navbar /> */}
       <Hero />
       <About />
       <Skills />
@@ -27,4 +30,3 @@ function App() {
 }
 
 export default App;
-//app.js
